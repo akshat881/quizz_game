@@ -63,9 +63,7 @@ exit.onclick=()=>{
 let que_count = 0;
 let que = 1;
 let scor=0;
-
 let tir=15;
-
  next.onclick=()=>{
    
    if(que_count<questions.length-1){
@@ -118,13 +116,14 @@ clearInterval(counterLine);
 if(userAns==correcAns){
   scor++;
   
-  
-  let sor='<span class="sco"><p>'+scor+'</p>/<p>'+ questions.length+'</p></span>'
-  sco.innerHTML=sor;
+
+  console.log(scor);
 
 }
 
-    
+     
+  let sor='<span class="sco"><p>'+scor+'</p>/<p>'+ questions.length+'</p></span>'
+  sco.innerHTML=sor; 
   
 
   for (let i = 0; i <alloptions; i++) {
@@ -156,7 +155,7 @@ option_list.children[i].setAttribute("style", "pointer-events: none;");
   
 }
     }
-    console.log(counterLine);
+   
   }
   
  
